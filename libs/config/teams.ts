@@ -1,16 +1,14 @@
-import icon from "@assets/icon.svg";
+import ahmeteren from "@assets/ahmet-eren.svg";
 
 export const Teams = [
 	{
 		name: "Ahmed-i Fünun",
-		job: "Tasarımcı",
+		job: "Tasarımcı/AI",
 		slipyme: "ahmedi-funun",
 		social: {
-			discord: "a",
-			github: "b",
-			instagram: "bubirinsta",
-			youtube: "d",
+			discord: "Belki bir gün#9002",
+			instagram: "ahmet_eren_259",
 		},
-		image: icon,
+		image: ahmeteren,
 	},
 ];
