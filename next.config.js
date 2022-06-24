@@ -2,16 +2,16 @@
 const { withPlugins } = require("next-compose-plugins");
 const withImages = require("next-images");
 const withPWA = require("next-pwa");
-const runtimeCaching = require('next-pwa/cache')
 
 module.exports = withPlugins([withImages, withPWA], {
 	reactStrictMode: true,
 	poweredByHeader: false,
 	trailingSlash: true,
 	pwa: {
-		dest: 'public',
-		runtimeCaching,
-	},
+          dest: 'public',
+          register: true,
+          skipWaiting: true,
+        },
 	async redirects() {
 		return [
 			{
