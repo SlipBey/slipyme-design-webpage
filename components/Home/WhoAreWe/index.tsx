@@ -4,13 +4,22 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 export const WhoAreWe: FC = () => {
 	const Info = [
-		{ text: "Desc", red: true },
-		{ text: "Desc", green: true },
-		{ text: "Desc", orange: true },
+		{
+			text: "Biz Slipyme tasarım ekibiyiz. Bu proje Slipyme bünyesinde yer almaktadır.",
+			red: true,
+		},
+		{
+			text: "Biz Slipyme Designer olarak tasarımcılara özel bir sohbet ortamı ve yardım ortamı sunuyoruz.",
+			green: true,
+		},
+		{
+			text: "İsteğinize uygun tasarımlar yapıyoruz ve sizlere güzel bir ortam sunuyoruz.",
+			orange: true,
+		},
 	];
 
 	return (
-		<section className="container mx-autp text-center">
+		<section className="container mx-auto text-center">
 			<div className="flex flex-wrap justify-center space-y-5 sm:space-x-8 sm:space-y-0">
 				<div className="max-w-screen-2xl px-4 md:px-8 mx-auto p-8">
 					<div className="mb-10 md:mb-16" id="whoarewe">
@@ -27,7 +36,7 @@ export const WhoAreWe: FC = () => {
 						{Info.map((info, index) => (
 							<div className="flex mt-3" key={index}>
 								<AiFillCheckCircle
-									className={`w-6 h-6 ${
+									className={`w-8 h-8 ${
 										info.red
 											? "text-red-600"
 											: "text-gray-800"
@@ -41,7 +50,7 @@ export const WhoAreWe: FC = () => {
 											: "text-gray-800"
 									}`}
 								/>
-								<h3 className="text-lg md:text-xl font-medium text-center ml-2 -mt-1">
+								<h3 className="text-lg md:text-xl font-medium text-center ml-2">
 									{info.text}
 								</h3>
 							</div>

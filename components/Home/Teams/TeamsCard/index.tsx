@@ -2,7 +2,7 @@
 
 import type { FC } from "react";
 import { CustomImage } from "@components/Utils/CustomImage";
-import { FaYoutube, FaInstagram, FaDiscord, FaGithub } from "react-icons/fa";
+import { FaBehance, FaInstagram, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { Link } from "@components/Utils/Link";
 import { useCopyToClipboard } from "react-use";
 import { toast } from "react-toastify";
@@ -23,7 +23,7 @@ export const TeamsCard: FC<ITeamProps> = (team) => {
 		toast.success("Discord adresi başarıyla kopyalandı.");
 	};
 
-	let instagram, discord, github, youtube;
+	let instagram, discord, linkedin, behance;
 	if (team.social.instagram) {
 		instagram = (
 			<Link
@@ -44,23 +44,23 @@ export const TeamsCard: FC<ITeamProps> = (team) => {
 			</button>
 		);
 	}
-	if (team.social.github) {
-		github = (
+	if (team.social.linkedin) {
+		linkedin = (
 			<Link
-				href={`https://github.com/${team.social.github}`}
-				className="text-gray-800 hover:text-gray-900 duration-200"
+				href={`https://www.linkedin.com/in/${team.social.linkedin}`}
+				className="text-blue-800 hover:text-blue-900 duration-200"
 			>
-				<FaGithub className="w-6 h-6" />
+				<FaLinkedin className="w-6 h-6" />
 			</Link>
 		);
 	}
-	if (team.social.youtube) {
-		youtube = (
+	if (team.social.behance) {
+		behance = (
 			<Link
-				href={`https://youtube.com/c/${team.social.youtube}`}
+				href={`https://www.behance.net/${team.social.behance}`}
 				className="text-red-600 hover:text-red-700 duration-200"
 			>
-				<FaYoutube className="w-6 h-6" />
+				<FaBehance className="w-6 h-6" />
 			</Link>
 		);
 	}
@@ -90,10 +90,10 @@ export const TeamsCard: FC<ITeamProps> = (team) => {
 
 				<div className="flex justify-center">
 					<div className="flex gap-4">
-						{instagram}
 						{discord}
-						{github}
-						{youtube}
+						{behance}
+						{linkedin}
+						{instagram}
 					</div>
 				</div>
 			</div>

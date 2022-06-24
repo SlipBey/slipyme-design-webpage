@@ -13,31 +13,31 @@ export const Services: FC = () => {
 		{
 			title: "Adobe Premiere",
 			icon: SiAdobepremierepro,
-			desc: "Desc",
+			desc: "Video düzenleme, Montaj, Kurgu",
 			color: "bg-purple-500",
 		},
 		{
 			title: "Photoshop",
 			icon: SiAdobephotoshop,
-			desc: "Desc",
+			desc: "Fotoğraf düzenleme",
 			color: "bg-blue-500",
 		},
 		{
 			title: "Adobe Illustrator",
 			icon: SiAdobeillustrator,
-			desc: "Desc",
+			desc: "Logo tasarım, Poster",
 			color: "bg-orange-500",
 		},
 		{
 			title: "After Effects",
 			icon: SiAdobeaftereffects,
-			desc: "Desc",
+			desc: "Görsel efekt, Hareketli Grafik",
 			color: "bg-fuchsia-500",
 		},
 		{
 			title: "Xd",
 			icon: SiAdobexd,
-			desc: "Desc",
+			desc: "Arayüz Tasarımı/Deneyimi",
 			color: "bg-pink-500",
 		},
 	];
@@ -74,7 +74,7 @@ export const Services: FC = () => {
 									<h3 className="text-lg md:text-xl font-semibold text-center mb-2">
 										{job.title}
 									</h3>
-									<p className="text-gray-500 text-center mb-2">
+									<p className="text-gray-500 text-center mb-2 p-2">
 										{job.desc}
 									</p>
 								</div>

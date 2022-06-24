@@ -15,6 +15,9 @@ export const Example: FC = () => {
 						<p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
 							Buradaki çalışmalarımız tamamen örnek amaçlı
 							hazırlanmıştır.
+							<br />
+							(Not: Aşağıdaki görsel ve isimler şimdilik
+							temsilidir.)
 						</p>
 					</div>
 
