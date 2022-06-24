@@ -2,7 +2,7 @@
 
 Using [TypeScript](https://www.typescriptlang.org/), [NextJS](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/)
 
-Demo: https://designer.slipyme.xyz
+Demo: https://design.slipyme.xyz
 
 # Setup:
 
