@@ -82,7 +82,7 @@ export const TeamsCard: FC<ITeamProps> = (team) => {
 				<p className="text-gray-500 text-sm md:text-base text-center mb-3 md:mb-4">
 					{team.job}
 				</p>
-				<Link href={`https://slipyme.xyz/profile/${team.slipyme}`}>
+				<Link href={`https://slipyme.xyz/teams/${team.slipyme}`}>
 					<button className="text-gray-900 bg-gradient-to-r from-yellow-200 to-orange-200 hover:bg-gradient-to-l hover:from-yellow-200 hover:to-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-3">
 						Slipyme Profili
 					</button>
