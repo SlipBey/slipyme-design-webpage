@@ -5,7 +5,7 @@ export const Teams = [
 	{
 		name: "Ahmed-i Fünun",
 		job: "AI/UI Tasarımcı",
-		slipyme: "ahmedi-funun",
+		slipyme: "ahmed-i-funun",
 		social: {
 			discord: "Belki bir gün#9002",
 			instagram: "ahmet_eren_259",
@@ -15,7 +15,7 @@ export const Teams = [
 	{
 		name: "004_Macit",
 		job: "UI/UX Tasarımcı",
-		slipyme: "004-macit",
+		slipyme: "004_macit",
 		social: {
 			discord: "004_Macit#2087",
 			instagram: "004macit_design",
