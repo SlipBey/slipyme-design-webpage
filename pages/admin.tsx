@@ -1,8 +1,5 @@
 import { NextPage } from "next";
-import { Hero, About, Pricing } from "@components/Order";
-import { Layout } from "@components/Layout";
 import { NextSeo } from "next-seo";
-import { Footer } from "@components/Layout/Footer";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "react-toastify";
 
@@ -108,7 +105,7 @@ const AdminPage: NextPage = () => {
 			</div>
 		</div>
 	);
-};
 }
+};
 
 export default AdminPage;
