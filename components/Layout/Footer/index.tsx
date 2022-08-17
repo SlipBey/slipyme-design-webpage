@@ -13,11 +13,11 @@ export const Footer: FC = () => {
 		},
 		{
 			name: "Slipyme",
-			href: "https://slipyme.xyz",
+			href: "https://slipyme.com",
 		},
 		{
 			name: "Slipyme - Code",
-			href: "https://code.slipyme.xyz",
+			href: "https://code.slipyme.com",
 		},
 	];
 
@@ -83,7 +83,7 @@ export const Footer: FC = () => {
 							<FiHeart className="text-red-500 inline" /> by{" "}
 							<Link
 								underline
-								href="https://slip.slipyme.xyz"
+								href="https://slip.slipyme.com"
 								className="text-blue-600"
 							>
 								SlipBey
