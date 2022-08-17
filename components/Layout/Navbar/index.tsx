@@ -56,7 +56,7 @@ export const Navbar: FC = () => {
 			title: "Slipyme",
 			spacing: true,
 			icon: <BiCodeAlt />,
-			link: "https://www.slipyme.xyz",
+			link: "https://www.slipyme.com",
 		},
 	];
 
