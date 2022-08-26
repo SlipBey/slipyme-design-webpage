@@ -1,5 +1,5 @@
 /* eslint-disable */
 module.exports = {
-	siteUrl: "https://design.slipyme.xyz",
+	siteUrl: "https://design.slipyme.com",
 	generateRobotsTxt: true,
 };

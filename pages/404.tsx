@@ -3,31 +3,34 @@ import { Layout } from "@components/Layout";
 import { Link } from "@components/Utils/Link";
 
 import { FaHome, FaCode } from "react-icons/fa";
+import { useLocaleParser } from "@libs/localeParser";
 
 const NotFoundPage: NextPage = () => {
+	const parser = useLocaleParser();
+
 	const Pages = [
 		{
 			icon: FaHome,
 			color: "bg-blue-100 text-blue-600",
-			name: "Anasayfa",
+			name: parser.get("home"),
 			link: "/",
 		},
 		{
 			icon: FaCode,
 			color: "bg-cyan-100 text-cyan-600",
 			name: "Slipyme",
-			link: "https://www.slipyme.xyz",
+			link: "https://www.slipyme.com",
 		},
 	];
 
 	return (
-		<Layout title="Sayfa Bulunamadı">
+		<Layout title={parser.get("error")}>
 			<section className="py-8 px-4 text-center">
 				<h1 className="mt-12 text-orange-400 text-5xl font-bold">
-					Sayfa Bulunamadı 404
+					{parser.get("error_title")}
 				</h1>
 				<h2 className="mt-5 text-gray-400 text-3xl font-semibold">
-					Hoops! Aradaığınız sayfaya ulaşılamadı.
+					{parser.get("error_text")}
 				</h2>
 
 				<div className="mt-8 grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">

@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -22,8 +23,12 @@ a {
 }
 
 ::-webkit-scrollbar {
-	@apply bg-transparent w-2.5;
+	@apply bg-gray-100 w-2.5;
 }
-::-webkit-scrollbar-thumb:hover {
-	@apply duration-200 bg-gray-300 rounded-md;
+
+::-webkit-scrollbar-thumb {
+	@apply duration-200 bg-orange-300 rounded-md;
+	&:hover {
+		@apply bg-orange-400;
+	}
 }

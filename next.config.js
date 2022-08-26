@@ -6,32 +6,41 @@ module.exports = withPlugins([withImages], {
 	reactStrictMode: true,
 	poweredByHeader: false,
 	trailingSlash: false,
+	i18n: {
+		locales: ["en", "tr"],
+		defaultLocale: "tr",
+	},
 	async redirects() {
 		return [
 			{
 				source: "/github",
-				destination: "https://slipyme.xyz/github",
+				destination: "https://www.slipyme.com/github",
 				permanent: true,
 			},
 			{
 				source: "/instagram",
-				destination: "https://slipyme.xyz/instagram",
+				destination: "https://www.slipyme.com/instagram",
 				permanent: true,
 			},
 			{
 				source: "/youtube",
-				destination: "https://slipyme.xyz/youtube",
+				destination: "https://www.slipyme.com/youtube",
 				permanent: true,
 			},
 			{
 				source: "/discord",
-				destination: "https://slipyme.xyz/discord",
+				destination: "https://www.slipyme.com/discord",
 				permanent: true,
 			},
 			{
 				source: "/source-code",
 				destination:
 					"https://github.com/SlipBey/slipyme-design-webpage",
+				permanent: true,
+			},
+			{
+				source: "/admin",
+				destination: "https://www.slipyme.com",
 				permanent: true,
 			},
 		];
