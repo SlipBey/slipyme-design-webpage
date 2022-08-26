@@ -18,6 +18,7 @@
 		"paths": {
 			"@styles/*": ["styles/*"],
 			"@components/*": ["components/*"],
+			"@locales/*": ["locales/*"],
 			"@assets/*": ["assets/*"],
 			"@libs/*": ["libs/*"]
 		},
