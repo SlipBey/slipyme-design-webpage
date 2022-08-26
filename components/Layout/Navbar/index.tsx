@@ -9,10 +9,12 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdDesignServices } from "react-icons/md";
 import { HiFolderAdd } from "react-icons/hi";
-import { BiCodeAlt } from "react-icons/bi";
 
 import classnames from "classnames";
 import { useRouter } from "next/router";
+import { useLocaleParser } from "@libs/localeParser";
+import classNames from "classnames";
+import { CONFIG } from "@libs/config";
 
 export const Navbar: FC = () => {
 	const router = useRouter();
@@ -20,43 +22,39 @@ export const Navbar: FC = () => {
 	const [top, setTop] = useState(false);
 	const [open, setOpen] = useState(true);
 
+	const parser = useLocaleParser();
+
 	const Menus = [
 		{
-			title: "Anasayfa",
+			title: parser.get("home"),
 			icon: <AiOutlineHome />,
 			link: "/",
 		},
 		{
-			title: "Biz Kimiz?",
+			title: parser.get("whoarewe"),
 			icon: <FaUsers />,
 			link: "/#whoarewe",
 		},
 		{
-			title: "Hizmetlerimiz",
+			title: parser.get("services"),
 			icon: <FaPencilAlt />,
 			link: "/#ourservices",
 		},
 		{
-			title: "Örneklerimiz",
+			title: parser.get("exams"),
 			icon: <TbCertificate />,
 			link: "/#ourexam",
 		},
 		{
-			title: "Ekibimiz",
+			title: parser.get("teams"),
 			spacing: true,
 			icon: <FaUser />,
 			link: "/#our-team",
 		},
 		{
-			title: "Sipariş",
+			title: parser.get("order"),
 			icon: <HiFolderAdd />,
 			link: "/order",
-		},
-		{
-			title: "Slipyme",
-			spacing: true,
-			icon: <BiCodeAlt />,
-			link: "https://www.slipyme.com",
 		},
 	];
 
@@ -82,28 +80,37 @@ export const Navbar: FC = () => {
 	return (
 		<>
 			<div
-				className={`bg-gray-100 min-h-screen p-5 pt-8 ${
+				className={`relative bg-gray-100 min-h-screen p-5 pt-8 ${
 					open ? "w-72" : "w-20"
-				} relative duration-300`}
+				} duration-300`}
 			>
 				<BsArrowLeftShort
 					onClick={() => setOpen(!open)}
-					className={`bg-transparent text-yellow-600 text-3xl rounded-full absolute right-[-1rem] border-yellow-600 border-2 cursor-pointer duration-200 hover:scale-110 active:scale-90 ${
-						!open && "rotate-180"
-					}`}
+					className={classNames(
+						"bg-transparent text-orange-600 text-3xl rounded-full absolute right-[-1rem] border-orange-600 border-2 cursor-pointer hover:scale-110, active:scale-90",
+						{
+							"rotate-180": !open,
+						},
+					)}
 				/>
 				<div className="inline-flex">
 					<MdDesignServices
-						className={`text-4xl text-yellow-300 rounded cursor-pointer block float-left mr-2 duration-500 ${
-							open && "rotate-[360deg]"
-						}`}
+						className={classNames(
+							"text-4xl text-orange-500 mr-2 duration-500",
+							{
+								"rotate-[360deg]": open,
+							},
+						)}
 					/>
 					<h1
-						className={`text-gray-800 origin-left font-medium mt-1 text-xl ${
-							!open && "hidden	"
-						}`}
+						className={classNames(
+							"text-gray-800 font-medium text-xl",
+							{
+								hidden: !open,
+							},
+						)}
 					>
-						Slipyme - Design
+						{CONFIG.SEO.title}
 					</h1>
 				</div>
 
@@ -111,13 +118,17 @@ export const Navbar: FC = () => {
 					{Menus.map((menu, index) => (
 						<Link href={menu.link} key={index}>
 							<li
-								className={`duration-200 ${
-									router.pathname == menu.link
-										? "text-gray-800 text-sm font-medium flex items-center gap-x-4 cursor-pointer p-2 rounded-md bg-gray-300"
-										: "text-gray-800 text-sm font-medium flex items-center gap-x-4 cursor-pointer p-2 rounded-md hover:bg-gray-300 duration-20"
-								} ${menu.spacing ? "mt-9" : "mt-2"}`}
+								className={classNames(
+									"text-gray-800 text-sm font-medium flex items-center gap-x-4 cursor-pointer p-2 rounded-md duration-200 hover:bg-gray-200",
+									{
+										"bg-gray-200":
+											router.pathname == menu.link,
+										"mt-9": menu.spacing,
+										"mt-2": !menu.spacing,
+									},
+								)}
 							>
-								<span className="text-2xl block float-left text-amber-500">
+								<span className="text-2xl block float-left text-orange-500">
 									{menu.icon ? (
 										menu.icon
 									) : (
@@ -145,19 +156,15 @@ export const Navbar: FC = () => {
 					"bottom-0",
 					"right-0",
 					"mx-10",
-					"lg:mx-20",
-					"my-10",
 					"z-50",
 					"text-white",
 					"w-10",
 					"h-10",
-					"bg-yellow-500",
-					"hover:scale-110",
+					"bg-orange-400",
+					"hover:bg-orange-500",
 					"ease-in-out",
 					"duration-200",
-					"active:scale-90",
-					"rounded-r-lg",
-					"rounded-tl-lg",
+					"rounded-t-lg",
 					{
 						block: top,
 						hidden: !top,

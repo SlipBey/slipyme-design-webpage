@@ -4,7 +4,7 @@ import macit from "@assets/team/macit.svg";
 export const Teams = [
 	{
 		name: "Ahmed-i Fünun",
-		job: "AI/UI Tasarımcı",
+		job: "AI/UI",
 		slipyme: "ahmed-i-funun",
 		social: {
 			discord: "Belki bir gün#9002",
@@ -14,7 +14,7 @@ export const Teams = [
 	},
 	{
 		name: "004_Macit",
-		job: "UI/UX Tasarımcı",
+		job: "UI/UX",
 		slipyme: "004_macit",
 		social: {
 			discord: "004_Macit#2087",

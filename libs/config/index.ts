@@ -3,9 +3,9 @@ import { Exam } from "@libs/config/example";
 import { Teams } from "@libs/config/teams";
 
 const SEO = {
-	layoutTitle: "%s - Slipyme Tasarım",
-	title: "Slipyme Tasarım",
-	publishDomain: "https://design.slipyme.xyz",
+	layoutTitle: "%s - Slipyme Design",
+	title: "Slipyme Design",
+	publishDomain: "https://design.slipyme.com",
 	themeColor: "#6D28D9",
 	keywords: [
 		"slipyme",

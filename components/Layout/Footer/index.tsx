@@ -4,11 +4,12 @@ import { FiHeart } from "react-icons/fi";
 import { CONFIG } from "@libs/config";
 import { CustomImage } from "@components/Utils/CustomImage";
 import icon from "@assets/icon.svg";
+import { useLocaleParser } from "@libs/localeParser";
 
 export const Footer: FC = () => {
 	const Pages = [
 		{
-			name: "Kaynak Kodları",
+			name: "Source Code",
 			href: "/source-code",
 		},
 		{
@@ -16,10 +17,12 @@ export const Footer: FC = () => {
 			href: "https://slipyme.com",
 		},
 		{
-			name: "Slipyme - Code",
+			name: "Slipyme Software",
 			href: "https://code.slipyme.com",
 		},
 	];
+
+	const parser = useLocaleParser();
 
 	return (
 		<div>
@@ -31,17 +34,14 @@ export const Footer: FC = () => {
 								<CustomImage
 									src={icon}
 									className="mr-3 h-8"
-									alt="Slipyme - Logo"
+									alt="Slipyme_Icon"
 								/>
 								<span className="self-center text-2xl font-semibold whitespace-nowrap">
-									Slipyme Tasarım
+									{CONFIG.SEO.title}
 								</span>
 							</span>
 							<p className="mt-3 mb-3 text-gray-500 w-96">
-								Slipyme Tasarım, Slipyme&apos;e ait bir
-								projedir. Slipyme bünyesinde bulunan bu projenin
-								amacı sizlere grafik tasarım sektöründe de
-								hizmet sunabilmektir.
+								{parser.get("footer_text")}
 							</p>
 							<div className="flex space-x-6">
 								{CONFIG.CONTACT.map((social, index) => (
@@ -58,7 +58,7 @@ export const Footer: FC = () => {
 						<div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 							<div>
 								<h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-									Diğer
+									{parser.get("other")}
 								</h2>
 								<ul className="text-gray-600">
 									{Pages.map((page, index) => (
@@ -109,7 +109,7 @@ export const Footer: FC = () => {
 							<p className="font-semibold">
 								Bu proje{" "}
 								<Link
-									href="https://www.slipyme.xyz"
+									href="https://www.slipyme.com"
 									className="text-blue-600"
 								>
 									Slipyme
