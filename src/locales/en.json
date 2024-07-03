@@ -1,0 +1,50 @@
+{
+  "home": "Home Page",
+  "whoarewe": "Who Are We?",
+  "services": "Services",
+  "exams": "Examples",
+  "teams": "Our Teams",
+  "order": "Get Order",
+  "profiles": "Porfile",
+  "designer": "Designer",
+  "other": "Other",
+  "error": "Page Not Found",
+
+  "more_exams": "More Examples",
+
+  "error_title": "page Not Found 404",
+  "pricing_title": "Our Design Plans",
+  "order_title": "Another Level in Designs",
+
+  "hero_text": "Every job we do with our successful design team is a quality.",
+  "whoarewe_text": "Slipyme Design was established for things like helping designers, suggesting ideas. You can also start an order as you wish with our expert team.",
+  "services_text": "You can choose us when you need help with one of the following branches.",
+  "exams_text": "Here are some of our designs that we have made before, prepared as samples and found for reference.",
+  "teams_text": "We include people who are experts in their jobs and do good work in our team.",
+  "footer_text": "Slipyme Design is a project belonging to Slipyme. The aim of this project, which is part of Slipyme, is to serve you in the graphic design industry.",
+  "error_text": "Hoops! The page you are looking for could not be found.",
+  "order_text": "We provide services in order to produce quality works as much as possible.",
+
+  "info_text_1": "We are the Slipyme design team. This project is part of Slipyme.",
+  "info_text_2": "We, as Slipyme Designer, offer designers a special chat and help environment.",
+  "info_text_3": "We make designs according to your wishes and offer you a beautiful environment.",
+
+
+  "pricing_text": "Our current purchases and works are carried out on our discord server. To come to Discord",
+  "pricing_text_1": "click",
+
+  "buy": "Buy",
+  "money_currency": "$",
+
+  "plan_standard": "Standard",
+  "plan_middle": "Middle",
+  "plan_professional": "Professional",
+
+  "desc_standard": "In this plan, basic level designs are made..",
+  "desc_middle": "In this plan, middle level designs are made.",
+  "desc_professional": "In this plan, professional level designs are made.",
+
+  "price_standard": "20",
+  "price_middle": "80",
+  "price_professional": "200"
+}

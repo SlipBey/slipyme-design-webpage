@@ -1,0 +1,49 @@
+{
+  "home": "Anasayfa",
+  "whoarewe": "Biz Kimiz?",
+  "services": "Hizmetlerimiz",
+  "exams": "Örnek Çalışmalar",
+  "teams": "Ekibimiz",
+  "order": "Sipariş Alın",
+  "profiles": "Profili",
+  "designer": "Tasarımcı",
+  "other": "Diğer",
+  "error": "Sayfa Bulunamadı",
+
+  "more_exams": "Daha Fazla Örnek",
+
+  "error_title": "Aradığınız Sayfa Bulunamadı 404",
+  "pricing_title": "Tasarım Planlarımız",
+  "order_title": "Tasarımlarda Başka Seviye",
+
+  "hero_text": "Yaptıkları işte başarılı tasarım ekibimizle yaptığımız her iş bir kalitedir.",
+  "whoarewe_text": "Slipyme Tasarım, tasarımcılara yardımcı olmak, fikir önerilerinde bulunmak gibi şeyler için kurulmuştur. Ayrıca uzman ekibimiz ile istediğiniz gibi sipariş başlatabilirsiniz.",
+  "services_text": "Sizinde aşağıdaki dallardan biriyle ilgili yardıma ihtiyacınız olduğunda bizi tercih edebilirsiniz.",
+  "exams_text": "Daha önceden yaptığımız, örnek olarak hazırladığımız ve referans için bulunan bazı tasarımlarımız.",
+  "teams_text": "İşinde uzmanlaşmış ve iyi işler çıkaran kişileri ekibimizde barındırırız.",
+  "footer_text": "Slipyme Tasarım, Slipyme'e ait bir projedir. Slipyme bünyesinde bulunan bu projenin amacı sizlere grafik tasarım sektöründe de hizmet sunabilmektir.",
+  "error_text": "Hoops! Aradığınız sayfaya ulaşılamadı.",
+  "order_text": "Olabildiğince kaliteli işler ortaya çıkartmak amacıyla hizmet veriyoruz.",
+
+  "info_text_1": "Biz Slipyme tasarım ekibiyiz. Bu proje Slipyme bünyesinde yer almaktadır.",
+  "info_text_2": "Biz Slipyme Designer olarak tasarımcılara özel bir sohbet ortamı ve yardım ortamı sunuyoruz.",
+  "info_text_3": "İsteğinize uygun tasarımlar yapıyoruz ve sizlere güzel bir ortam sunuyoruz.",
+
+  "pricing_text": "Şuanlık satın alıp işlerimiz discord sunucumuzda gerçekleştirilmektedir. Discorda gelmek için",
+  "pricing_text_1": "tıklayın",
+
+  "buy": "Satın Al",
+  "money_currency": "₺",
+
+  "plan_standard": "Standart",
+  "plan_middle": "Orta",
+  "plan_professional": "Profesyonel",
+
+  "desc_standard": "Bu planda temel düzeyde tasarımlar yapılır.",
+  "desc_middle": "Bu planda orta düzeyde tasarımlar yapılır.",
+  "desc_professional": "Bu planda profesyonel düzeyde tasarımlar yapılır.",
+
+  "price_standard": "100",
+  "price_middle": "450",
+  "price_professional": "800"
+}
